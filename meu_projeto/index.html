@@ -1,66 +1,166 @@
-<html lang="pt-br"> 
-<head>  
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-    <title>Atividade 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Marcos Antonio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-    <h1 class="atv1">
-      Atividade 1 - Programação WEB
-    </h1>
-    <p>Esta é a primeira atividade do curso.</p>  
-    <p>Meu nome é Marcos.</p> 
-    <img class="foto-perfil" src="/img/perfil.jpg" alt="Foto de Marcos">
+    <div class="pagina-grid">
+        
+        <!-- Cabeçalho e Identificação Pessoal -->
+        <header class="header-principal">
+            <h1>Atividade 1 - Programação WEB</h1>
+            <p>Esta é a primeira atividade do curso.</p>  
+            <p>Meu nome é Marcos Antonio.</p>
+            <img class="foto-perfil" src="img/perfil.jpg" alt="Foto de perfil de Marcos">
+        </header>
 
-    <section>
-    <h2>Meus Interesses</h2>
-    <ul class="lista-interesses">
-        <li>Desenvolvimento Web</li>
-        <li>Análise de Dados</li>
-        <li>Educação e Ensino</li>
-    </ul>
-</section>
-  
-    <header>
-        <h1>Fale Conosco</h1>
-    </header>
-   
-    <main>
-        <section>
-            <h2 class="atv2">
-              Formulário de Contato
-            </h2>
+        <main class="conteudo-principal">
+            
+            <!-- Seção de Tecnologias e Interesses (Baseada no modelo da imagem) -->
+            <section class="secao-cartoes">
+                <h2>Tecnologias e Interesses</h2>
+                <p class="subtitulo-secao">Tecnologias, ferramentas e áreas que estudo e tenho interesse.</p>
+                
+                <div class="grid-cartoes">
+                    <!-- Cartão 1 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">💻</span>
+                                <h3>Desenvolvimento Web</h3>
+                            </div>
+                            <p>Criação de sites e aplicações Web com HTML, CSS e JavaScript.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-html">HTML</span>
+                            <span class="tag tag-css">CSS</span>
+                            <span class="tag tag-js">JavaScript</span>
+                        </div>
+                    </article>
 
-            <form>
-                <fieldset>
-                    <legend>Preencha o formulário abaixo:</legend>
+                    <!-- Cartão 2 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">☕</span>
+                                <h3>Java</h3>
+                            </div>
+                            <p>Desenvolvimento de aplicações back-end, com foco em qualidade e boas práticas.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-java">Java</span>
+                            <span class="tag tag-spring">Spring</span>
+                            <span class="tag tag-jpa">JPA</span>
+                        </div>
+                    </article>
 
-                    <div> 
-                        <label for="Nome">Nome:</label>
-                        <input type="text" id="Nome" name="Nome">
+                    <!-- Cartão 3 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">🗄️</span>
+                                <h3>Banco de Dados</h3>
+                            </div>
+                            <p>Modelagem, consulta e persistência de dados em aplicações.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-postgres">PostgreSQL</span>
+                            <span class="tag tag-mysql">MySQL</span>
+                        </div>
+                    </article>
+
+                    <!-- Cartão 4 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">🔀</span>
+                                <h3>Controle de Versão</h3>
+                            </div>
+                            <p>Versionamento de código, colaboração e organização de projetos.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-git">Git</span>
+                            <span class="tag tag-github">GitHub</span>
+                        </div>
+                    </article>
+
+                    <!-- Cartão 5 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">📊</span>
+                                <h3>Engenharia de Software</h3>
+                            </div>
+                            <p>Interesse em qualidade de software, manutenção e evolução de sistemas.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-qualidade">Qualidade</span>
+                            <span class="tag tag-refatoracao">Refatoração</span>
+                        </div>
+                    </article>
+
+                    <!-- Cartão 6 -->
+                    <article class="cartao flex-card">
+                        <div>
+                            <div class="cartao-topo">
+                                <span class="icone">🚴</span>
+                                <h3>Ciclismo</h3>
+                            </div>
+                            <p>Prática de ciclismo de estrada e MTB, com foco em performance e bem-estar.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag tag-ciclismo">Ciclismo</span>
+                            <span class="tag tag-treino">Treino</span>
+                            <span class="tag tag-saude">Saúde</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Seção de Contato -->
+            <section class="secao-contato">
+                <h2>Fale Conosco</h2>
+                <form>
+                    <fieldset>
+                        <legend>Preencha o formulário abaixo:</legend>
+
+                        <div>
+                            <label for="Nome">Nome:</label>
+                            <input type="text" id="Nome" name="Nome" required>
+                        </div>
+
+                        <div>
+                            <label for="Email">Email:</label>
+                            <input type="email" id="Email" name="Email" required>
+                        </div>
+
+                        <div>
+                            <label for="Assunto">Assunto:</label>
+                            <input type="text" id="Assunto" name="Assunto">
+                        </div>
+
+                        <div>
+                            <label for="Mensagem">Mensagem:</label>
+                            <textarea name="Mensagem" id="Mensagem" rows="5"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="botoes-form">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
                     </div>
+                </form>
+            </section>
+        </main>
 
-                    <div>
-                        <label for="Email">Email:</label>
-                        <input type="email" id="Email" name="Email" required> 
-                    </div>
+        <!-- Rodapé -->
+        <footer class="footer-principal">
+            <p>&copy; 2026 Marcos Antonio Lima da Silva. Todos os direitos reservados.</p>
+        </footer>
 
-                    <div>
-                        <label for="Assunto">Assunto:</label>
-                        <input type="text" id="Assunto" name="Assunto">
-                    </div>
-
-                    <div>
-                        <label for="Mensagem">Mensagem:</label>
-                        <textarea name="Mensagem" id="Mensagem" rows="5"></textarea>
-                    </div>
-                </fieldset>
-
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-            </form>
-        </section>
-    </main>
+    </div>
 </body>
 </html>
